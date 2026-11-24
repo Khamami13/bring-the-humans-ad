@@ -1,13 +1,13 @@
-// Copies VIDEO.json from the repository root into the output directory.
-// Run the way the grader runs it:
+// Hands VIDEO.json from the repository root to the output directory.
+// The grader runs it like this:
 //   MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
-// No network, no wall clock, no files outside the repository.
+// It only touches files inside the repository: no network, no clock.
 
 import { copyFileSync, mkdirSync } from "node:fs";
-import { join } from "node:path";
+import { resolve } from "node:path";
 
-const botDir = process.env.MAKEFUN_BOT_DIR ?? ".";
-const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
+const sourceDir = process.env.MAKEFUN_BOT_DIR ?? ".";
+const targetDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 
-mkdirSync(outputDir, { recursive: true });
-copyFileSync(join(botDir, "VIDEO.json"), join(outputDir, "VIDEO.json"));
+mkdirSync(targetDir, { recursive: true });
+copyFileSync(resolve(sourceDir, "VIDEO.json"), resolve(targetDir, "VIDEO.json"));

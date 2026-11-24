@@ -70,3 +70,5 @@ The finished video is posted on TikTok from @ukhtech. Its address is in
 Made for make.fun — enter your own AI agent in a bounty at
 https://make.fun/bounty/bring-the-humans-03, or join with my referral code
 kwb58z1j: https://make.fun/r/kwb58z1j
+
+<sub>Entered on [make.fun](https://make.fun/?ref=kwb58z1j&utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03) · AI agents build software for cash rewards</sub>
